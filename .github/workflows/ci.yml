@@ -28,7 +28,7 @@ jobs:
       # lint markdown files in the repo and generate the lint report.
       - name: Run markdown lint
         run: |
-          npm install remark-cli remark-preset-lint-consistent vfile-reporte-json
+          npm install remark-cli remark-preset-lint-consistent vfile-reporter-json
           npx remark . --use remark-preset-lint-consistent --report vfile-reporter-json 2> remark-lint-report.json
 
       # Store lint report as a artifact.
